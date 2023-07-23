@@ -7,6 +7,7 @@ while True:
                 #I suppose that the numbers you want to add up should be greater than one number, so incase anyone enters 0, the while loop will break and the exception will be caught
                     try: 
                         add = 0
+                        #for addition add = 0 , for subtraction, all you need to do is to change add = 1 
                         for a in range(n):
                             conut = int(input("Enter the number you wish to add:"))
                             add += conut
