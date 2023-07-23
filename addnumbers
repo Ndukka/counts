@@ -4,14 +4,12 @@ while True:
             #Here you can input the length of the numbers that you intend to count
             while True:
                 if n >= 1:
-                #I suppose that the numbers should be greater than one, so incase anyone enters 0, the while loop will break and the exception will be caught
+                #I suppose that the numbers you want to add up should be greater than one number, so incase anyone enters 0, the while loop will break and the exception will be caught
                     try: 
                         add = 0
-                        #if you intend to either multiply or divide. Please note that you have to change the add here to 1 instead of 0. else you might get 0 on every operation.
                         for a in range(n):
                             conut = int(input("Enter the number you wish to add:"))
                             add += conut
-                            #incase you intent to multiply or divide or subtract, you can just change the +=  to either -= for subtraction, *= for multiplication and //= for floor divisoon
                         print ("Your addition is:", add)
                         break
                     except ValueError:
@@ -19,7 +17,6 @@ while True:
                 else:
                     print("You need to enter a number greater than 1:")
             break
-            # I chose to put this break here, out of the nested while loop so that it catches the error just incase someone tries to enter an input that is not accepted, say an alphabet.
         except Exception:
             print("You must enter a valid number")
     
