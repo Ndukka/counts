@@ -7,6 +7,7 @@ while True:
                 #I suppose that the numbers should be greater than one, so incase anyone enters 0, the while loop will break and the exception will be caught
                     try: 
                         add = 0
+                        #if you intend to either multiply or divide. Please note that you have to change the add here to 1 instead of 0. else you might get 0 on every operation.
                         for a in range(n):
                             conut = int(input("Enter the number you wish to add:"))
                             add += conut
