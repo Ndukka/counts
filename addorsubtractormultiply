@@ -1,0 +1,29 @@
+while True:
+        try:
+            n = int(input("Enter the no. of numbers you intend to count:" ))
+            #Here you can input the length of the numbers that you intend to count
+            while True:
+                if n >= 1:
+                #I suppose that the numbers should be greater than one, so incase anyone enters 0, the while loop will break and the exception will be caught
+                    try: 
+                        add = 0
+                        for a in range(n):
+                            conut = int(input("Enter the number you wish to add:"))
+                            add += conut
+                            #incase you intent to multiply or divide or subtract, you can just change the +=  to either -= for subtraction, *= for multiplication and //= for floor divisoon
+                        print ("Your addition is:", add)
+                        break
+                    except ValueError:
+                        print("You entered the wrong details")
+                else:
+                    print("You need to enter a number greater than 1:")
+            break
+            # I chose to put this break here, out of the nested while loop so that it catches the error just incase someone tries to enter an input that is not accepted, say an alphabet.
+        except Exception:
+            print("You must enter a valid number")
+    
+    
+    
+
+            
+    
